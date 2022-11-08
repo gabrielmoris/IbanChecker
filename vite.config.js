@@ -17,7 +17,7 @@ export default defineConfig({
       "/api": {
         target: "https://api.easykonto.de",
         changeOrigin: true,
-        //this key is important
+        //this key is important:  request should be to /api/:params
         secure: false,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
